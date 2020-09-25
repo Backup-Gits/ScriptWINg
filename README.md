@@ -29,3 +29,5 @@ Getting rid of Windows 10's tracking mechanism in a way that avoids limiting fun
 Thanks to [WinAero](https://winaero.com) for their [Windows Defender Firewall rules](https://winaero.com/blog/stop-windows-10-spying-on-you-using-just-windows-firewall) to avoid Windows 10 tracking used in [Tracker Killer](#trackerkiller).
 
 Thanks to Federico Dossena for his [Windows 10 Privacy Guide](https://github.com/adolfintel/Windows10-Privacy), which was inspiration for [Tracker Killer](#trackerkiller).
+
+Thanks to Lacia for the hideen feature configs :).
