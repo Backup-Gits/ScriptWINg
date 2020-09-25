@@ -10,12 +10,12 @@ if not "%errorlevel%" == "0" (
 )
 
 echo "    - Beginning registry changes"
-1>NUL reg add "%~dp0ViVeTool.exe" 23257398 2
-1>NUL reg add "%~dp0ViVeTool.exe" 20438551 2
-1>NUL reg add "%~dp0ViVeTool.exe" 23615618 2
-1>NUL reg add "%~dp0ViVeTool.exe" 23403403 2
-1>NUL reg add "%~dp0ViVeTool.exe" 23674478 2
-1>NUL reg add "%~dp0ViVeTool.exe" 25175482 2
+1>NUL reg add "%~dp0ViVeTool.exe" addconfig 23257398 2
+1>NUL reg add "%~dp0ViVeTool.exe" addconfig 20438551 2
+1>NUL reg add "%~dp0ViVeTool.exe" addconfig 23615618 2
+1>NUL reg add "%~dp0ViVeTool.exe" addconfig 23403403 2
+1>NUL reg add "%~dp0ViVeTool.exe" addconfig 23674478 2
+1>NUL reg add "%~dp0ViVeTool.exe" addconfig 25175482 2
 
 cls
 echo "Hidden Features has finished running."
