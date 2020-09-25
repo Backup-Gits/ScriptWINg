@@ -193,7 +193,6 @@ else goto End
 1>NUL move "C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe" "C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe_BAK"
 1>NUL del /F /Q "C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe_BAK"
 1>NUL reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdge.exe" /v Debugger /t 1>NUL reg_SZ /d "%windir%\System32\1>NUL taskkill.exe" /f
-goto ServiceRemoval
 
 :End
 cls
