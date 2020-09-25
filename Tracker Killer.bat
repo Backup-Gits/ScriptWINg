@@ -66,25 +66,6 @@ echo "    - Blocking malicious hosts in Windows Defender Firewall"
 1>NUL netsh advfirewall firewall add rule name="telemetry_msnbot-65-55-108-23.search.msn.com" dir=out action=block remoteip=65.55.108.23 enable=yes
 1>NUL netsh advfirewall firewall add rule name="telemetry_a23-218-212-69.deploy.static.akamaitechnologies.com" dir=out action=block remoteip=23.218.212.69 enable=yes
 
-echo "    - Removing some UWP apps"
-1>NUL echo.>"%~dp0install_wim_tweak.exe":Zone.Identifier
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.WindowsSoundRecorder" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.WindowsCalculator" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.BingNews" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.BingWeather" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.WindowsCamera" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.Messaging" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "microsoft.windowscommunicationsapps" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.Windows.PeopleExperienceHost" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.People" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.WindowsAlarms" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.MicrosoftStickyNotes" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.WindowsMaps" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.ZuneMusic" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.ZuneVideo" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft-Windows-ContactSupport" /r
-1>NUL "%~dp0install_wim_tweak.exe" /o /c "Microsoft.YourPhone" /r
-
 echo "    - Beginning registry changes"
 1>NUL reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v SmartScreenEnabled /t 1>NUL reg_SZ /d "Off" /f
 1>NUL reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t 1>NUL reg_DWO1>NUL rd /d "0" /f
